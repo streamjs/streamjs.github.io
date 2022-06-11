@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stream.js | Home</title>
+    <link rel="icon" href="files/logo.png" >
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <link href="style.css" rel="stylesheet">
+    <meta name="theme-color" content="#50fa94">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+    <style>
+        #all{
+            /*background-color: rgb(245, 245, 245);*/
+            padding: 90px;
+        }
+        #allx2{
+            width: 70%;
+        }
+        @media only screen and (max-width: 1138px ){
+            #allx2{
+                width: 100%;
+            }
+            #one{
+                transform: translateY(10%) !important;
+                margin: 5px;
+            }
+            #all{
+                /*background-color: rgb(245, 245, 245);*/
+                padding: 10px;
+            }
+            #two{
+                transform: translateY(0%) !important;
+                height: auto;
+                margin: 0;
+            }
+        }
+        .bold{
+    background-color: rgb(238, 238, 238);
+    border-radius: 10px;
+}
+xmp{
+    margin: 10px;
+}
+@media only screen and (max-width: 420px ){
+    xmp{
+        margin: 5px;
+    }
+}
+pre{
+    font-size: 18px;
+}
+a{
+  text-decoration: none;
+}
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light p-3">
+        <div class="container-fluid">
+            <img src="files/logo full.png" width="150" style="margin-right: 10px;">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="contact.html">Contact us</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="privacy.html">Privacy policy</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <img src="files/back.png" style="position: absolute; top: 0; left: 0; z-index: -1; width: 100%; height : 100%; object-fit : cover;opacity: 0.06;" />
+    <br>
+    <br>
+    <br>
+    <div align="center">
+<div id="allx2" >
+    <div id="all" style="z-index: auto;"  align="left">
+        <div style="display: inline-block; transform: translateY(15%);" align="left" id="one">
+            <div  align="left" class="m-2">
+                <h1 style="font-size: 38px;" id="title"><strong>Stream.js JS framework</strong></h1>
+                <br>
+                <span style="color:gray;">Use Films.js to customize your video <br> tag in very  modern design.</span>
+            </div>
+            <br>
+            <br>
+        </div>
+        
+        <div class="video-player" id="two" style="display: inline-block; transform: translateY(10%); margin: 35px; width: auto;">
+          <video id="video" autoplay>
+            <source src="files/video.mp4" type="video/mp4"  />
+          </video>
+            <div class="controls">
+              <button class="play-button control-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+          </svg>
+              </button>
+              <input type="range" min="0" max="100" class="timeline" value="0" />
+              <button class="sound-button control-button">
+                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+          </svg>
+              </button>
+              <button class="control-button fullscreen-button">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+          </svg>
+              </button>
+            </div>
+          </div>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div align="left">
+            <h1 style="font-size: 38px;" id="title"><strong>Download</strong></h1>
+          </div>
+          <br>
+          <a href="files/Streamjs.rar" download><button class="btn btn-success">Download</button></a>
+          <br>
+          <br>
+          <br>
+          <br>
+          <div align="left">
+            <h1 style="font-size: 38px;" id="title"><strong>Js and Css CDN by jsdelivr</strong></h1>
+          </div>
+          <br>
+          <br>
+          <div align="left">   
+<pre class="wp-block-code prettyprint  bold" style="border: none;" id="code1"><xmp style="padding: 15px; font-size: 20px;" ><link href="https://cdn.jsdelivr.net/gh/porbet/streamjs/streamjs.css" rel="stylesheet" >
+
+<script href="https://cdn.jsdelivr.net/gh/porbet/streamjs/streamjs.js" ></script></xmp></pre> 
+<br>
+<br>
+<div align="left">
+  <h1 style="font-size: 38px;" id="title"><strong>HTML template</strong></h1>
+</div>
+<br>
+<br>
+
+<pre class="wp-block-code prettyprint  bold" style="border: none;" id="code1"><xmp style="padding: 15px; font-size: 20px;" ><div class="video-player" style="width: auto;">
+    <video id="video">
+      <source src="files/video.mp4" type="video/mp4" />
+    </video>
+      <div class="controls">
+        <button class="play-button control-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" viewBox="0 0 20 20" fill="currentColor">
+      <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zM9.555 7.168A1 1 0 008 8v4a1 1 0 001.555.832l3-2a1 1 0 000-1.664l-3-2z" clip-rule="evenodd" />
+    </svg>
+        </button>
+        <input type="range" min="0" max="100" class="timeline" value="0" />
+        <button class="sound-button control-button">
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15.536 8.464a5 5 0 010 7.072m2.828-9.9a9 9 0 010 12.728M5.586 15H4a1 1 0 01-1-1v-4a1 1 0 011-1h1.586l4.707-4.707C10.923 3.663 12 4.109 12 5v14c0 .891-1.077 1.337-1.707.707L5.586 15z" />
+    </svg>
+        </button>
+        <button class="control-button fullscreen-button">
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 8V4m0 0h4M4 4l5 5m11-1V4m0 0h-4m4 0l-5 5M4 16v4m0 0h4m-4 0l5-5m11 5l-5-5m5 5v-4m0 4h-4" />
+    </svg>
+        </button>
+      </div>
+</div></xmp></pre> 
+</div>
+<br>
+<br>
+<div align="left">
+  <h1 style="font-size: 38px;" id="title"><strong>Enjoy with using Stream.js in your websites!</strong></h1>
+</div>
+</div>
+</div>
+<br>
+<br>
+<footer class="text-center text-lg-start bg-light text-muted p-3">
+
+  <!-- Section: Social media -->
+
+  <!-- Section: Links  -->
+  <section class="">
+    <div class="container text-center text-md-start mt-5">
+      <!-- Grid row -->
+      <div class="row mt-3">
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+          <!-- Content -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Porbet
+          </h6>
+          <p>
+            Porbet , a company that makes something out of nothing
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Products
+          </h6>
+          <p>
+            <a href="https://porbet.github.io/cytocyber/" class="text-reset">Cytocyber</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/streamjs/" class="text-reset">Strean.js</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/opensource/" class="text-reset">Porbet keep</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/opensource/" class="text-reset">Porbet todo</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Useful links
+          </h6>
+          <p>
+            <a href="index.html" class="text-reset">Home</a>
+          </p>
+          <p>
+            <a href="https://porbet.github.io/store/" class="text-reset">Store</a>
+          </p>
+          <p>
+            <a href="contact.html" class="text-reset">Contact</a>
+          </p>
+          <p>
+            <a href="privacy.html" class="text-reset">Privacy</a>
+          </p>
+        </div>
+        <!-- Grid column -->
+
+        <!-- Grid column -->
+        <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+          <!-- Links -->
+          <h6 class="text-uppercase fw-bold mb-4">
+            Contact
+          </h6>
+          <p> Nador, Morocco</p>
+          <p> 
+            porbet.contact@gmail.com
+          </p>
+          <p> + 212 638 397 172</p>
+        </div>
+        <!-- Grid column -->
+      </div>
+      <!-- Grid row -->
+    </div>
+  </section>
+  <!-- Section: Links  -->
+
+  <!-- Copyright -->
+  <div class="text-center p-4">
+    © 2022 Copyright:
+    <a class="text-reset fw-bold" href="http://opensource-porbet.ga/">opensource-porbet.ga</a>
+  </div>
+  <!-- Copyright -->
+</footer>
+<script src="script.js"></script>
+</body>
+</html>
