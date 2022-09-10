@@ -12,16 +12,11 @@
     <meta name="theme-color" content="#50fa94">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
-    <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5WBX72RQBR"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-5WBX72RQBR');
-    </script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
     <style>
+      html {
+        scroll-behavior: smooth;
+      }
         #all{
             /*background-color: rgb(245, 245, 245);*/
             padding: 90px;
@@ -34,7 +29,7 @@
                 width: 100%;
             }
             #one{
-                transform: translateY(10%) !important;
+                transform: translateY(0%) !important;
                 margin: 5px;
             }
             #all{
@@ -65,12 +60,26 @@ pre{
 a{
   text-decoration: none;
 }
+#banner{
+          background-color: black;
+          padding: 150px;
+          margin: 20px;
+          border-radius: 10px;
+          background-image: url("files/backgroud.jpg");
+          background-repeat: no-repeat, repeat;
+
+        }
+        @media only screen and (max-width: 760px) {
+            #banner{
+              padding: 25px !important;
+            }
+        }
     </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg fixed-top navbar-light bg-light p-3">
+    <nav class="navbar navbar-expand-lg navbar-light bg-white p-2 fixed-top" style="box-shadow: 0px 5px 10px -5px rgb(204, 204, 204);">
         <div class="container-fluid">
-            <img src="files/logo full.png" width="150" style="margin-right: 10px;">
+            <img src="files/logo full.png" width="170" style="margin-right: 10px;">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -94,20 +103,20 @@ a{
     <br>
     <br>
     <div align="center">
-<div id="allx2" >
-    <div id="all" style="z-index: auto;"  align="left">
-        <div style="display: inline-block; transform: translateY(15%);" align="left" id="one">
-            <div  align="left" class="m-2">
-                <h1 style="font-size: 38px;" id="title"><strong>Stream.js JS framework</strong></h1>
-                <br>
-                <span style="color:gray;">Use Films.js to customize your video <br> tag in very  modern design.</span>
-            </div>
-            <br>
-            <br>
+      <div style="" id="banner" align="left">
+        <div id="one" style="display: inline-block;">
+          <h1 style="font-size: 45px; font-weight: normal !important; color: white;"><strong>Stream.js</strong>: Modern video tag</h1>
+          <br>
+          <span  style="font-size: 15px; display: inline-block; color: rgb(189, 189, 189); width: 50%;" id="description" >Do you search for fast way to design your video tag ? You're in the right place ! Discover the process by clicking <strong>Get Started</strong> below .</span>
+          <br>
+          <br>
+          <br>
+          <div id="getstarted" align="center">
+              <a href="#all" class="mar-1"><button class="btn btn-primary" >Get started</button></a>
+          </div>
         </div>
-        
         <div class="video-player" id="two" style="display: inline-block; transform: translateY(10%); margin: 35px; width: auto;">
-          <video id="video" autoplay>
+          <video id="video" autoplay="true">
             <source src="files/video.mp4" type="video/mp4"  />
           </video>
             <div class="controls">
@@ -129,38 +138,51 @@ a{
               </button>
             </div>
           </div>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <br>
-          <div align="left">
-            <h1 style="font-size: 38px;" id="title"><strong>Download</strong></h1>
-          </div>
-          <br>
-          <a href="files/Streamjs.rar" download><button class="btn btn-success">Download</button></a>
-          <br>
+      </div>
+<div id="allx2" >
+    <div id="all" style="z-index: auto;"  align="left">
+        
+        
           <br>
           <br>
           <br>
           <div align="left">
-            <h1 style="font-size: 38px;" id="title"><strong>Js and Css CDN by jsdelivr</strong></h1>
+            <span class="material-symbols-outlined" style="color: rgb(23, 96, 155); font-size: 60px;">
+              file_download 
+            </span>
+            <div class="d-in_block" style="font-size: 25px; transform: translateY(-50%); margin-left: 20px; font-weight: bold;">Download</div>
           </div>
           <br>
-          <br>
-          <div align="left">   
-<pre class="wp-block-code prettyprint  bold" style="border: none;" id="code1"><xmp style="padding: 15px; font-size: 20px;" ><link href="https://cdn.jsdelivr.net/gh/porbet/streamjs/streamjs.css" rel="stylesheet" >
+          <a href="files/Streamjs.rar" download><button class="btn btn-primary">Download</button></a>
 
-<script href="https://cdn.jsdelivr.net/gh/porbet/streamjs/streamjs.js" ></script></xmp></pre> 
-<br>
-<br>
-<div align="left">
-  <h1 style="font-size: 38px;" id="title"><strong>HTML template</strong></h1>
-</div>
-<br>
-<br>
+          <br>
+          <br>
+          <div align="left">
+            <span class="material-symbols-outlined" style="color: rgb(23, 96, 155); font-size: 75px;">
+              css 
+            </span>
+            <div class="d-in_block" style="font-size: 25px; transform: translateY(-75%); margin-left: 20px; font-weight: bold;">CDN by jsdelivr</div>
+            <pre class="wp-block-code prettyprint  bold" style="border: none;" id="code1"><xmp style="padding: 15px; font-size: 20px;" ><link href="https://cdn.jsdelivr.net/gh/porbet/streamjs/streamjs.css" rel="stylesheet" ></xmp></pre> 
+          </div>
+            
+          
+
+          <div align="left"> 
+            <span class="material-symbols-outlined" style="color: rgb(23, 96, 155); font-size: 75px;">
+              javascript
+            </span>
+            <div class="d-in_block" style="font-size: 25px; transform: translateY(-75%); margin-left: 20px; font-weight: bold;">CDN by jsdelivr</div>
+            <pre class="wp-block-code prettyprint  bold" style="border: none;" id="code1"><xmp style="padding: 15px; font-size: 20px;" ><script href="https://cdn.jsdelivr.net/gh/porbet/streamjs/streamjs.js" ></script></xmp></pre> 
+          </div>
+          <div align="left"> 
+            <span class="material-symbols-outlined" style="color: rgb(23, 96, 155); font-size: 75px;">
+              html
+            </span>
+            <div class="d-in_block" style="font-size: 25px; transform: translateY(-75%); margin-left: 20px; font-weight: bold;">Template</div>
+          </div>
+
+
+
 
 <pre class="wp-block-code prettyprint  bold" style="border: none;" id="code1"><xmp style="padding: 15px; font-size: 20px;" ><div class="video-player" style="width: auto;">
     <video id="video">
@@ -188,7 +210,7 @@ a{
 </div>
 <br>
 <br>
-<div align="left">
+<div align="center" class="m-2">
   <h1 style="font-size: 38px;" id="title"><strong>Enjoy with using Stream.js in your websites!</strong></h1>
 </div>
 </div>
